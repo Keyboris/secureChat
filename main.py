@@ -14,7 +14,8 @@ import os
 
 parameters = dh.generate_parameters(generator=2, key_size=2048, backend=default_backend())
 
-
+#it may not work at the moment, i havent tested it yet. im in a hurry because my shift starts soon
+# i know -- i am not currently using the shared secret to encrypt communication, that is to be implemented next
 
 def main():
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
